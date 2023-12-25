@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b3b9e5c4b129e664d897a74de2ee9d64, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: cddfa4d8d7b7aa640a1319bb90453fe0, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 34ccfc99e7d28274e8c9ee4ae95aa0a0, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4f60beab6e0cd1244ae9a56ddfbf78eb, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: ec985f1c3b8d0844f85fe3f9fd2c29a3, type: 2}
