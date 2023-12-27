@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net.Http;
@@ -174,10 +174,11 @@ public class ScheduleHandle : MonoBehaviour
             {
                 locations.Add(location);
                 // converting latitude and longitude into vector3 format
-                Vector3 vec = GeoToVector3(location);
+                // Vector3 vec = GeoToVector3(location);
 
                 // placing a button prefab at the given location
-                GameObject eventButton = Instantiate(eventButtonPrefab, vec, Quaternion.identity);
+                // GameObject eventButton = Instantiate(eventButtonPrefab, vec, Quaternion.identity);
+                GameObject eventButton = Instantiate(eventButtonPrefab);
                 loc_obj.Add(eventButton);
 
                 PlaceButton(location, eventButton);
@@ -236,8 +237,8 @@ public class ScheduleHandle : MonoBehaviour
         //GameObject eventButton = Instantiate(eventButtonPrefab);
 
         // Use raycasting to determine the height above the surface
-        Ray ray = new Ray(GeoToVector3(location), Vector3.down);
-        RaycastHit hit;
+        // Ray ray = new Ray(GeoToVector3(location), Vector3.down);
+        // RaycastHit hit;
 
         var loc = new Location()
         {
